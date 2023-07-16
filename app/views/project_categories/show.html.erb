@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @project_category %>
+
+<div>
+  <%= link_to "Edit this project category", edit_project_category_path(@project_category) %> |
+  <%= link_to "Back to project categories", project_categories_path %>
+
+  <%= button_to "Destroy this project category", @project_category, method: :delete %>
+</div>
